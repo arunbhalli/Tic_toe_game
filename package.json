@@ -23,6 +23,7 @@
     "cy:integrate": "start-server-and-test start:silent http://localhost:3001/ cy:run",
     "cy:open": "cypress open",
     "cypress": "start-server-and-test start:silent http://localhost:3000/ cy:open"
+    
   },
   "eslintConfig": {
     "extends": [
