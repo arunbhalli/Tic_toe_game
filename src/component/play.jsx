@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Square from './Square';
-const Play = () => {
+const Board = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
   console.log(board);
+  
   const handleSquareClick = (position) => {
     setBoard((prev) => {
       return prev.map((square, pos) => {
@@ -17,9 +18,7 @@ const Play = () => {
     return (
       <Square
         value={board[position]}
-        onClick={() => {
-          handleSquareClick(position);
-        }}
+        onClick={() => handleSquareClick(position)}
       />
     );
   };
@@ -44,4 +43,4 @@ const Play = () => {
   );
 };
 
-export default Play;
+export default Board;
