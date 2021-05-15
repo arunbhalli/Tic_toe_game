@@ -1,4 +1,4 @@
-import Play from './component/play';
+import Play from './component/Board';
 
 function App() {
   return (
