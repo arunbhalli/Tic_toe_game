@@ -1,10 +1,8 @@
 import React from 'react';
 
-const Square = ({value}) => {
+const Square = ({value,game}) => {
   // console.log(value);
-  return <button onClick={()=>{
-    console.log(value)
-  }}>{value}</button>;
+  return <button  className="button" onClick={game}>{value}</button>;
 };
 
 export default Square;
